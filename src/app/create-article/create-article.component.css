@@ -1,0 +1,14 @@
+
+.create-article-form{width:50%;margin:auto;margin-top:50px;}
+.create-article-form input{ border: none;background: transparent;font-size:18px;color:#999999;margin-bottom:20px;}
+.create-article-form input::placeholder{ border: none;background: transparent !important;font-size:18px;color:#9f9f9f;margin-bottom:20px;}
+.create-article-form input:hover{ border: none;background: transparent !important;font-size:18px;color:#9f9f9f;margin-bottom:20px;}
+.create-article-header-title{font-size:20px;margin-bottom:20px;}
+.toolbar-article{border-top:1px solid #ddd;border-bottom: 1px solid #ddd;padding:10px 0;}
+.btn-publish{float:right;margin-left: 15px;}
+.unit-btns-wrap{margin-top:20px;margin-bottom:20px;}
+.toolbar-article button{border: none;background: transparent;}
+body{background-color: white;}
+.article-image-wrap{width:80%;margin:20px auto;}
+
+

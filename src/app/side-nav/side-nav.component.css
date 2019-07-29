@@ -1,0 +1,6 @@
+.navbar{background-color: #23263e;color:white;font-size:15px;width:12%;height:100%;position:fixed;padding-top:40px;}
+div.side-nav-item:hover{background-color: #393f59;}
+a{ padding-left: 20px;vertical-align: -webkit-baseline-middle;    color: white;
+    text-decoration: none;}
+
+div{border-bottom: 1px solid #53546f;    padding: 15px 0;width:100%;}

@@ -1,0 +1,21 @@
+
+
+
+<div class="articles-item-wrap">
+    <div class="Latest-Article-title">
+      <span>Posts</span>
+      <button mat-raised-button color="primary" (click)="openCreateArticle()" class="btn-create-article">Create Article</button>
+    </div>
+    
+    <div class="article-item" *ngFor="let article of articles$ | async">
+
+      <app-view-article [articleInput]="article"></app-view-article>
+      <div class="article-item-unit-buttons">
+      <a routerLink="/EditArticle/{{article.ID}}" class="btn-edit-article"><i class="material-icons">create</i></a>     
+      <button (click)="deleteArticle(article)" class="btn-delete-article"><i class="material-icons">delete</i></button>
+      <a target="_blank" href="https://b2.jpost.com/Jpost2016/Sitepage.aspx?sitepageid=205&Fromangular=1&articleid={{article.ID}}">
+        <i class="material-icons">visibility</i>
+      </a>   
+      </div>
+    </div>
+</div> 

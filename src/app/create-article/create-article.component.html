@@ -1,0 +1,41 @@
+
+
+<form [formGroup]="CreateArticleForm" (ngSubmit)="onSubmit()" class="create-article-form">
+  <div class="create-article-header-title">Create Post</div>
+<input type="hidden" formControlName="ID">
+  <div class="article-reporter">
+    <app-reporter (selectedReporter)="getSelectedReporter($event)"></app-reporter>
+  </div>
+
+ 
+  <div class="mb">
+  <input type="text" placeholder="Add Title"  formControlName="Title">
+  </div>
+   
+  <div class="mb">
+  <input type="text" placeholder="Add Teaser"  formControlName="Teaser">
+  </div>
+  <div>
+    <ckeditor [editor]="Editor" data="<p>Hello, world!</p>" formControlName="Body"></ckeditor>
+  </div>
+  <div class="article-image-wrap">
+    <app-view-image [imageInput]="articleImage" *ngIf="articleImage" ></app-view-image> 
+  </div>
+
+  <div>
+    <app-article-tags (selectedTagsEvent)="getSelectedTags($event)" [articleTags]="articleTags"></app-article-tags>
+  </div>
+
+  <div class="toolbar-article">
+     <input type="button" (click)="openSearchImages()" class="material-icons" value="camera_alt"> 
+  </div>
+
+  <div class="unit-btns-wrap"> 
+      <button mat-raised-button color="primary"  class="btn-publish">Publish</button>
+      <button mat-stroked-button color="primary" (click)="cancelArticle()" class="btn-publish">cancel</button>
+  </div>
+  
+  
+  
+  </form>
+  

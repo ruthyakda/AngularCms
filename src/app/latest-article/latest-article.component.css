@@ -1,0 +1,10 @@
+.Latest-Article-title{font-size: 36px; color: #162d3d;  font-weight: bold;margin-bottom:30px;margin-top:30px;}
+.articles-item-wrap{width:50%;margin:auto;}
+.article-item{background-color: white;  margin-bottom:20px;height:120px;border-radius:10px;}
+
+
+.material-icons{     font-size: 16px;
+    color: #a5a9ad;}
+.btn-delete-article{background: none; border: none;}
+.article-item-unit-buttons{padding-top:20px;}
+.btn-create-article{float:right;}

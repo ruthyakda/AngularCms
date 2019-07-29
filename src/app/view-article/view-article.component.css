@@ -1,0 +1,8 @@
+.article-item-image{width:18%;float:left;}
+.article-item-image img{width:100%;}
+.article-item-text{float:left;   width: 70%;
+    margin-top: 20px;
+    padding-left: 20px;color: #162d3d;}
+.btn-edit-article{ border: 1px solid #bb131a;text-decoration: none;color: #bb131a;}
+.article-item-text .title{font-size:15px;margin-bottom:10px;}
+.article-item-text .teaser{font-size:13px;}

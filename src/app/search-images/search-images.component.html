@@ -1,0 +1,22 @@
+<form class="example-form">
+
+  <div class="Search-images-header-wrap">
+    <span class="serach-images-header-text">Choose an Image</span>
+  <div (click)="close()" class="search-images-header-close-btn"><mat-icon matPrefix>close</mat-icon></div>
+</div> 
+
+<div class="search-img-btn">
+    <mat-form-field>
+        <mat-icon matPrefix>search</mat-icon>
+       
+        <input matInput type="search" placeholder="search" class="search-input"  [(ngModel)]="filterImage" [ngModelOptions]="{standalone: true}" >
+      </mat-form-field>
+</div>
+<div class="search-images-view-wrap">
+  
+<app-view-image [imageInput]= "image"  *ngFor="let image of images$ | async  | FilterPipe:'ImageID,ImageName':filterImage" (click)="selectImage(image)"></app-view-image>
+</div>
+<div>
+<button mat-button [mat-dialog-close]="selectedImage" cdkFocusInitial class="btn-add-img">add image</button>
+</div>
+</form>

@@ -1,0 +1,16 @@
+.Search-images-header-wrap{
+    background-color: #3899ec;
+    height: 40px;
+    color: #ffffff;
+    padding-top: 18px;}
+    .serach-images-header-text{font-size:20px;padding-left:20px;}
+    .search-images-header-close-btn{float:right;padding-right:20px}
+    .search-images-view-wrap{width:80%;margin:auto;}
+     .search-img-btn{    height: 80px;
+        border-bottom: 1px solid #f0f4f7;
+        margin-bottom: 20px;
+        padding-right: 10%;
+        padding-left: 10%;}
+        .btn-add-img{float:right;background-color: #3899ec;color:#ffffff;margin-top:50px;margin-bottom:50px;margin-right:20px;}
+      
+  

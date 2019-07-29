@@ -1,0 +1,14 @@
+<div style="width:100%;height:50px;">
+    <div class="header">
+      <span class="header-logo-text">CMS</span>
+<div class="header-user-details-wrap">
+<div class="header-user-details" (click)="displayBtnLogout()" *ngIf="user">
+        <i class="material-icons header-user-icon">person </i>        
+        <span class="header-user-name">{{user.FirstName + user.LastName}}</span>
+        <i class="material-icons">expand_more</i>
+</div>
+<div class="arrow-box-logout" *ngIf="isDisplayLogout">
+  <button mat-stroked-button color="primary" (click)="logout()">LogOut</button>
+</div>
+</div>
+</div>

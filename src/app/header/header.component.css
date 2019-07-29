@@ -1,0 +1,47 @@
+.header{background-color: white;height:50px;font-size:30px;position:fixed; box-shadow: 0 1px 5px 0 rgba(41,85,115,0.21);top: 0;width: 100%;    padding-left: 25px;}
+    .header-user-details-wrap{float:right;cursor: pointer;}
+    .header-user-details{   
+        font-size: 15px;
+        padding-right: 30px;
+        margin-top: 12px;
+        border-left: 1px solid #dcd6d6;
+        padding-left: 15px;}
+    .header-user-name{vertical-align:super;padding-left:5px;}
+    .header-user-icon{color:#7bbcec !important;}
+   .header-logo-text{line-height:50px;}
+
+    .arrow-box-logout {
+        position: relative;
+        background: #ffffff;
+        font-size: 16px;
+        text-align: center;
+        height: 100px;
+        line-height: 100px;
+        margin-top: 20px;
+        margin-right: 10px;
+        border-radius: 5px;
+       
+    }
+    .arrow-box-logout:after, .arrow_box:before {
+        bottom: 100%;
+        left: 75%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+    }
+    
+    .arrow-box-logout:after {
+        border-color: rgba(255, 255, 255, 0);
+        border-bottom-color: #ffffff;
+        border-width: 10px;
+        margin-left: -10px;
+    }
+    .arrow-box-logout:before {
+        border-color: rgba(123, 188, 236, 0);
+        border-bottom-color: #7bbcec;
+        border-width: 10px;
+        margin-left: -10px;
+    }
